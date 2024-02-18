@@ -10,7 +10,7 @@ import com.hrpayroll.payrollservice.entities.Worker;
 
 @Component
 //aqui mostro os caminhos para chegar ao Worker
-@FeignClient(name = "wr-worker", url = "localhost:8001", path = "/workers")
+@FeignClient(name = "hr-worker", path = "/workers")
 public interface WorkerFeignClient {
     
     @GetMapping(value = "/{id}")

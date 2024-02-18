@@ -24,4 +24,9 @@ public class PaymentResource {
         return ResponseEntity.ok(payment);
 
     }
+
+    @GetMapping
+    public String ola(){
+        return "olaaaa";
+    }
 }
